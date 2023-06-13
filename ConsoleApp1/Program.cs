@@ -2,9 +2,12 @@
 
 using ConsoleApp1;
 
-Console.WriteLine("Hello, World!" + "abc");
+Console.WriteLine("
+Hello, World!" 
++ "abc");
 
-Console.WriteLine("want to test it~");
+Console
+.WriteLine("want to test it~");
 
 List<string> list = new() {
   "safsadf",
@@ -14,4 +17,5 @@ List<string> list = new() {
 };
 
 var c = new Class1();
-c.Something("sdhasdk");
+c
+.Something("sdhasdk");

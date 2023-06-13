@@ -32,5 +32,5 @@ jobs:
         dotnet new tool-manifest
         dotnet tool install JetBrains.ReSharper.GlobalTools
         dotnet tool restore
-        cleanupcode Test.sln
+        dotnet tool run jb cleanupcode Test.sln
       

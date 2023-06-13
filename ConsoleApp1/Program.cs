@@ -2,20 +2,16 @@
 
 using ConsoleApp1;
 
-Console.WriteLine("
-Hello, World!" 
-+ "abc");
+Console.WriteLine(
+  "Hello, World!" 
+  + "abc");
 
 Console
-.WriteLine("want to test it~");
+ .WriteLine("want to test it~");
 
-List<string> list = new() {
-  "safsadf",
-  "asdfas",
-  "asdfasdf",
-  "asdfasdfasd",
-};
+List<string> list = new() { "safsadf","asdfas","asdfasdf","asdfasdfasd",};
 
-var c = new Class1();
+var c 
+  = new Class1();
 c
-.Something("sdhasdk");
+ .Something("sdhasdk");

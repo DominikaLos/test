@@ -33,4 +33,25 @@ jobs:
         dotnet tool install JetBrains.ReSharper.GlobalTools
         dotnet tool restore
         dotnet tool run jb cleanupcode Test.sln
+        
+    - uses: actions/upload-artifact@v2
+        with:
+          name: ResharperAnalysis
+          path: resharperAnalysis.xml
+          
+  resharperAnnotate:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v2
+        with:
+          name: ResharperAnalysis
+
+      - name: resharper
+        uses: glassechidna/resharper-action@master
+        with:
+          report: resharperAnalysis.xml
       

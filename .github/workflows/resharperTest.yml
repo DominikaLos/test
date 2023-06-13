@@ -35,9 +35,9 @@ jobs:
         dotnet tool run jb cleanupcode Test.sln
         
     - uses: actions/upload-artifact@v2
-        with:
-          name: ResharperAnalysis
-          path: resharperAnalysis.xml
+      with:
+        name: ResharperAnalysis
+        path: resharperAnalysis.xml
           
   resharperAnnotate:
     runs-on: ubuntu-latest

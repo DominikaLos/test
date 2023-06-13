@@ -28,7 +28,7 @@ jobs:
       run: dotnet build --no-restore
 
     - name: Setup Resharper CLI
-      bash: |
+      run: |
         dotnet tool install JetBrains.ReSharper.GlobalTools
         jb cleanupcode Test.sln
       

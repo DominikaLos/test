@@ -1,6 +1,8 @@
 name: ReSharper CLI CleanupCode
 
 on: [ push ]
+pull_request:
+    types: [opened, edited]
 
 jobs:
   cleanup:

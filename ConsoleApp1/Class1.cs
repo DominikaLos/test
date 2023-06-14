@@ -1,12 +1,10 @@
-﻿namespace ConsoleApp1 {
-  internal class Class1 {
-    public void Something(
-      string a 
-    ) 
+﻿namespace ConsoleApp1
+{
+    internal class Class1
     {
-      Console
-        .WriteLine(
-        a);
+        public void Something(string a)
+        {
+            Console.WriteLine(a);
+        }
     }
-  }
 }

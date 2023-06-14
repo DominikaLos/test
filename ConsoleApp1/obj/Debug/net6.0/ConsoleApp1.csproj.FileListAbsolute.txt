@@ -1,0 +1,15 @@
+/home/runner/work/test/test/ConsoleApp1/bin/Debug/net6.0/ConsoleApp1
+/home/runner/work/test/test/ConsoleApp1/bin/Debug/net6.0/ConsoleApp1.deps.json
+/home/runner/work/test/test/ConsoleApp1/bin/Debug/net6.0/ConsoleApp1.runtimeconfig.json
+/home/runner/work/test/test/ConsoleApp1/bin/Debug/net6.0/ConsoleApp1.dll
+/home/runner/work/test/test/ConsoleApp1/bin/Debug/net6.0/ConsoleApp1.pdb
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.csproj.AssemblyReference.cache
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.AssemblyInfoInputs.cache
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.AssemblyInfo.cs
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.csproj.CoreCompileInputs.cache
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.dll
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/refint/ConsoleApp1.dll
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.pdb
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ConsoleApp1.genruntimeconfig.cache
+/home/runner/work/test/test/ConsoleApp1/obj/Debug/net6.0/ref/ConsoleApp1.dll

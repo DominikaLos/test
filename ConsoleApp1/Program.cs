@@ -6,11 +6,12 @@ Console.WriteLine("Hello, World!" + "abc");
 
 Console.WriteLine("want to test it~");
 
-List<string> list = new() {
-  "safsadf",
-  "asdfas",
-  "asdfasdf",
-  "asdfasdfasd",
+List<string> list = new()
+{
+    "safsadf",
+    "asdfas",
+    "asdfasdf",
+    "asdfasdfasd",
 };
 
 var c = new Class1();

@@ -2,14 +2,9 @@
 
 using ConsoleApp1;
 
-Console
-  .WriteLine(
-  "Hello, World!" 
-  + "abc"
-    );
+Console.WriteLine("Hello, World!" + "abc");
 
-Console.WriteLine
-                ("want to test it~");
+Console.WriteLine("want to test it~");
 
 List<string> list = new()
 {
@@ -18,11 +13,16 @@ List<string> list = new()
     "asdfasdf",
     "asdfasdfasd",
 };
-List<string> list1 = new(){
-    "safsadf",     "asdfas",    "asdfasdf",    "asdfasdfasd",};
+List<string> list1 = new()
+{
+    "safsadf",
+    "asdfas",
+    "asdfasdf",
+    "asdfasdfasd",
+};
 
 var c = new Class1();
 c.Something("sdhasdk");
 
-var bb = true;
-var cc = 0;
+bool bb = true;
+int cc = 0;

@@ -29,6 +29,29 @@ jobs:
 
     - name: Setup Resharper CLI
       bash: |
-        dotnet tool install JetBrains.ReSharper.GlobalTools
-        jb cleanupcode Test.sln
-      
+        dotnet tool update --global JetBrains.ReSharper.GlobalTools
+        dotnet jb cleanupcode Test.sln
+        echo "---"
+        echo "if there is formatted code, names are:"
+        git diff --name-only
+        echo "---"
+        echo "git diff"
+        git diff
+        echo "---"
+        echo "stage all changes"
+        git add .
+        echo "---"
+        echo "configure git"
+        git config --global user.email "GITHUB@ACTION"
+        git config --global user.name "$GITHUB.ACTION"
+        echo "---"
+        echo "git commit"
+        git commit -m "here is reformatted code by github action"
+        echo "---"
+        echo "git push"
+        git push
+        echo "---"
+        echo "status"
+        git status
+        echo "---"
+        echo ""

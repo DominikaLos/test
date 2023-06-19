@@ -10,8 +10,8 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
-  build:
-
+  resharperCleanUp:
+    name: "resharper cleanup code + pushing commit with changes"
     runs-on: ubuntu-latest
 
     steps:

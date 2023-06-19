@@ -24,5 +24,5 @@ List<string> list1 = new(){
 var c = new Class1();
 c.Something("sdhasdk");
 
-var b = true;
-var c = 0;
+var bb = true;
+var cc = 0;

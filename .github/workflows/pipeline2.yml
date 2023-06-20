@@ -28,6 +28,8 @@ jobs:
     - name: Setup Resharper CLI
       run: |
         dotnet new tool-manifest --force
+        git commit -am "new manifest file"
+        git push
         dotnet tool restore
         dotnet tool update --global JetBrains.ReSharper.GlobalTools
         dotnet jb cleanupcode --settings="./.editorconfig" Test.sln

@@ -27,6 +27,7 @@ jobs:
 
     - name: Setup Resharper CLI
       run: |
+        dotnet new tool-manifest
         dotnet tool restore
         dotnet tool update --global JetBrains.ReSharper.GlobalTools
         dotnet jb cleanupcode --settings="./.editorconfig" Test.sln

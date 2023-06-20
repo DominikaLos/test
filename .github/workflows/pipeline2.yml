@@ -25,12 +25,21 @@ jobs:
     - name: Build
       run: dotnet build
 
+    - name: configuring git
+      run: |
+        echo
+        echo "configure git"
+        git config --global user.email "GITHUB@ACTION"
+        git config --global user.name "$GITHUB.ACTION"
+        
     - name: Setup Resharper CLI
       run: |
         dotnet tool restore
         dotnet tool update --global JetBrains.ReSharper.GlobalTools
         dotnet jb cleanupcode --settings="./.editorconfig" Test.sln
-        echo "---"
+    - name: pushing changes if needed
+      run: |
+        echo
         echo "if there is formatted code, names are:"
         git diff --name-only
         echo "---"
@@ -40,10 +49,6 @@ jobs:
         echo "stage all changes"
         git add .
         echo "---"
-        echo "configure git"
-        git config --global user.email "GITHUB@ACTION"
-        git config --global user.name "$GITHUB.ACTION"
-        echo "---"
         echo "git commit"
         git commit -m "here is reformatted code by github action"
         echo "---"
@@ -52,5 +57,3 @@ jobs:
         echo "---"
         echo "status"
         git status
-        echo "---"
-        echo ""

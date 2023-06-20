@@ -36,7 +36,7 @@ jobs:
       run: |
         dotnet tool restore
         dotnet tool update --global JetBrains.ReSharper.GlobalTools
-        dotnet jb cleanupcode --settings="./.editorconfig" Test.sln
+        dotnet jb cleanupcode --settings="./.editorconfig" -dsl="GlobalAll" Test.sln
     - name: pushing changes if needed
       run: |
         echo
